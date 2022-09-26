@@ -1,0 +1,50 @@
+body, ol, ul, li, h1, h3, h4, a, p{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+header{ 
+    background-color: #0d2670;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+header h1{
+    color: white;
+    text-shadow: 3px 3px 5px red;
+    font-size: 40px;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .subheader{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    opacity: .8;
+    position: absolute;
+    text-align: right;
+    padding: 10px;
+    right: 8px;
+    top: 25%;
+}
+
+nav{
+    position: relative;
+    background-color: #0d2670;
+    top: 0;
+    padding: 20px;
+}
+nav ul{
+    max-width: 550px;
+    margin: 20px auto;
+}
