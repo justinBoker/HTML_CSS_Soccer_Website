@@ -41,10 +41,119 @@ header h1{
 nav{
     position: relative;
     background-color: #0d2670;
-    top: 0;
+    top: -4px;
     padding: 20px;
 }
 nav ul{
-    max-width: 550px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: block;
+    font-size: 20px;
+    margin: 12px 0;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+
+main{
+    max-width: 100%;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h4{
+    font-size: 25px;
+    color:#0d2670;
+    text-shadow: 3px 3px 5px black;
+}
+article p{
+    line-height: 2em;
+}
+.football-match img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.football-match img:hover{
+    top: -4px;
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(5px 5px 5px black);   
+}
+.football-match p{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.top-4-levels h4{
+    font-size: 25px;
+    color:#0d2670;
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 8px;
+}
+.top-4-levels li{
+    padding: 10px;
+}
+
+@media screen and (min-width: 750px) {
+    .banner .subheader{
+        font-size: 20px;
+        top: 35%;
+    }
+    nav ul{
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li{
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+    }   
+}
+
+@media screen and (min-width: 950px) {
+    header h1{
+        font-size: 50px;
+    }
+    .banner .subheader{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner .subheader{
+        font-size: 40px;
+    }
+    article h4{
+        font-size: 35px;
+    }
+    article p{
+        font-size: 20px;
+        max-width: 50%;
+    }
+    .football-match img{
+        max-width: 50%;
+        float: right;
+    }
+    .football-match p{
+        position: relative;
+        bottom: 35px;
+        left: 625px;
+    }
+    .top-4-levels h4{
+        font-size: 35px;
+    }
+    .top-4-levels li{
+        font-size: 20px;
+    }
 }
