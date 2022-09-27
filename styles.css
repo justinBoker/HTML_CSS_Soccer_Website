@@ -9,7 +9,7 @@ header{
     padding: 20px;
     text-align: center;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
 }
 header h1{
@@ -25,7 +25,6 @@ header h1{
 }
 .banner img{
     width: 100%;
-    height: 600px;
 }
 .banner .subheader{
     background-color: white;
@@ -44,6 +43,7 @@ nav{
     background-color: #0d2670;
     top: -4px;
     padding: 20px;
+    border-top: thin solid white;
 }
 nav ul{
     max-width: 100%;
@@ -93,6 +93,7 @@ article p{
     font-size: 12px;
     font-weight: bold;
     padding: 5px;
+    max-width: fit-content;
 }
 
 .top-4-levels h4{
@@ -104,6 +105,7 @@ article p{
 .top-4-levels li{
     padding: 10px;
 }
+
 table{
     border-collapse: collapse;
     margin: 25px 0;
@@ -131,6 +133,35 @@ tbody tr:last-of-type{
 tbody tr:hover{
     font-weight: bold;
     color:#0d2670;
+}
+
+form h4{
+    font-size: 25px;
+    color:#0d2670;
+    text-shadow: 3px 3px 5px black;
+}
+form h4 br{
+    display: none;
+}
+input[type=text] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #eee;
+    box-shadow: 0 0 15px 4px #0808080f;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+input[type=submit] {
+    padding: 10px;
+    border: none;
+    background-color: #0d2670;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+input[type=submit]:hover {
+    box-shadow: 0 0 10px 1px black;
 }
 
 @media screen and (min-width: 750px) {
@@ -184,5 +215,25 @@ tbody tr:hover{
     }
     .top-4-levels li{
         font-size: 20px;
+    }
+    .pl-table{
+        position: relative;
+        left: 800px;
+        bottom: 300px;
+    }
+    .efl-table{
+        position: relative;
+        left: 800px;
+        bottom: 340px;
+    }
+    form{
+        position: relative;
+        bottom: 900px;
+    }
+    form h4 br{
+        display: initial;
+    }
+    input[type=text]{
+        width: 50%;
     }
 }
